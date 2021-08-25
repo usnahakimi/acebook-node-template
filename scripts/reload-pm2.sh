@@ -1,3 +1,3 @@
 #!/bin/bash
-cd ~/Desktop/aws-acebook/acebook-node-template
-pm2 startOrReload ecosystem.config.js
+cd ~/usna-acebook
+pm2 startOrReload ecosystem.config.js 
