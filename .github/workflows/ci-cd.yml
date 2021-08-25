@@ -34,8 +34,3 @@ jobs:
       with: 
         start: npm run start:test
         wait-on: http://localhost:3030
-
-    - name: Install dependencies
-      run: npm install
-    - name: Run build
-      run: npm run build
