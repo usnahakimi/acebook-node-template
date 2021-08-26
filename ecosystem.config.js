@@ -1,14 +1,12 @@
 module.exports = {
     apps: [
       {
-        name: "usna-acebook",
-        script: "npm",
-        args: 'run start',
+        name: 'usna-acebook',
+        script: 'npm',
+        args: 'serve -s build -l 3000 -n',
         interpreter: 'none',
         env: {
-          NODE_ENV: "production",
-          HOST: '0.0.0.0',
-          PORT: '3000',
+          NODE_ENV: 'production',
         },
       },
     ],
