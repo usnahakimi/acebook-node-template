@@ -11,10 +11,7 @@ permissions:
       - directory
       - file
 hooks:
-  BeforeInstall:
-    - location: scripts/Beforeinstall.sh
-      timeout: 300
   ApplicationStart:
-    - location: scripts/reload-pm2.sh
+    - location: scripts/deploy.sh
       timeout: 300
       runas: root
