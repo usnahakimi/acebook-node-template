@@ -5,12 +5,17 @@ files:
    destination: /home/ec2-user/usna-acebook
 permissions:
   - object: /home/ec2-user
+    pattern: "**"
     owner: ec2-user
     group: ec2-user
     type:
       - directory
       - file
 hooks:
+  AfterInstall:
+    - location: scripts/dependencies.sh
+      timeout: 300
+      runas: ec2-user
   ApplicationStart:
     - location: scripts/reload-pm2.sh
       timeout: 300
