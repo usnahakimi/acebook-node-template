@@ -3,7 +3,7 @@ module.exports = {
       {
         name: "usna-acebook",
         script: "npm",
-        args: 'start',
+        args: 'run start',
         interpreter: 'none',
         env: {
           NODE_ENV: "production",
